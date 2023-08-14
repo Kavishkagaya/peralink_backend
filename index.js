@@ -20,9 +20,10 @@ const db = mysql.createConnection({
   charset: "utf8mb4",
 });
 
-const app = express(),
-  server = require("http").createServer(app),
-  io = io.listen(server);
+// Create Express app
+const app = express();
+const server = http.createServer(app);
+const io = socketService.initSocketIO(server);
 
 // Add body-parser middleware
 app.use(bodyParser.urlencoded({ extended: true }));
