@@ -20,10 +20,9 @@ const db = mysql.createConnection({
   charset: "utf8mb4",
 });
 
-// Create Express app
-const app = express();
-const server = http.createServer(app);
-const io = socketService.initSocketIO(server);
+const app = express(),
+  server = require("http").createServer(app),
+  io = io.listen(server);
 
 // Add body-parser middleware
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -73,11 +72,6 @@ app.use("/comment_like", comment_like);
 app.use("/profile", displayProfile);
 app.use("/media", mediaUpload);
 app.use("/friend_request", friend_request);
-
-// Start the server
-app.listen(port, () => {
-  console.log(`Server listening on port ${port}`);
-});
 
 const socketPort = 3010;
 
