@@ -13,7 +13,7 @@ const secret = require("./JWTconfig");
 
 //create connection
 const db = mysql.createConnection({
-  host: "http://boq9xwp7trk1vrihlvkf-mysql.services.clever-cloud.com:3306",
+  host: "boq9xwp7trk1vrihlvkf-mysql.services.clever-cloud.com",
   user: "us5artcifyjqpibz",
   password: "xeZBGdvxd5bjLx2ooI0b",
   database: "boq9xwp7trk1vrihlvkf",
