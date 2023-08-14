@@ -13,10 +13,10 @@ const secret = require("./JWTconfig");
 
 //create connection
 const db = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "",
-  database: "peralink",
+  host: "http://boq9xwp7trk1vrihlvkf-mysql.services.clever-cloud.com:3306",
+  user: "us5artcifyjqpibz",
+  password: "xeZBGdvxd5bjLx2ooI0b",
+  database: "boq9xwp7trk1vrihlvkf",
   charset: "utf8mb4",
 });
 
