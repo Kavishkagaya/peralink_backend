@@ -7,7 +7,7 @@ const namespaces = {};
 const initSocketIO = (httpServer) => {
   const io = new Server(httpServer, {
     cors: {
-      origin: "*",
+      origin: "https://peralink-fa83f.web.app/",
       allowedHeaders: [
         "Origin",
         "X-Requested-With",
