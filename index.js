@@ -79,7 +79,7 @@ app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
 
-const socketPort = 3011;
+const socketPort = 3010;
 
 server.listen(socketPort, () => {
   console.log(`Server is running on port ${socketPort}`);
